@@ -1,2 +1,2 @@
 # silly mkw tools
-[rpc patcher](https://roshikins.github.io/rrrpc.html)
+[full rr items](https://roshikins.github.io/items.html)
