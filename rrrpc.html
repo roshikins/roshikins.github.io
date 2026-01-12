@@ -162,13 +162,11 @@
             };
 
             const handleCopyARCode = () => {
-                const arCode = `040017D0 0000000A
-040017D4 00000042
-040017B0 5744E608
-040017B4 2505317F
-040017B8 57EE6EC1
-040017BC AA4A994E
-040017C0 7E7BF29A`;
+                const arCode = `040017B0 1080D7C7
+040017B4 0DD440EC
+040017B8 6DDC7450
+040017BC A547E40C
+040017C0 AB1CF62E`;
                 navigator.clipboard.writeText(arCode).then(() => {
                     setStatus('Code copied to clipboard');
                 });
@@ -271,7 +269,7 @@
                         </div>
 
                         <p className="text-slate-700 text-sm mt-4 text-center">
-                            Latest version: 6.5.6-beta 
+                            Latest RR version: 6.6
                         </p>
                     </div>
                 </div>
