@@ -129,7 +129,7 @@
 
 <script>
 const ITEM_ORDER = [
-    "Green", "Red", "Banana", "FIB", "Shroom", "Mushroom", "Bomb", "Blue", 
+    "Green", "Red", "Banana", "FIB", "Shroom", "Triple Shroom", "Bomb", "Blue", 
     "Shock", "Star", "Golden", "Mega", "Blooper", "POW", "Mega TC", 
     "Bill", "Triple Green", "Triple Red", "Triple Nana"
 ];
@@ -137,102 +137,102 @@ const ITEM_ORDER = [
 const fullData = {
     "2": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
-        "2": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Mushroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5}
+        "2": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Triple Shroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5}
     },
     "3": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 12.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "3": {"Red": 5, "Shroom": 32.5, "Mushroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5}
+        "3": {"Red": 5, "Shroom": 32.5, "Triple Shroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5}
     },
     "4": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 12.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "3": {"Red": 5, "Shroom": 32.5, "Mushroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
-        "4": {"Mushroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5}
+        "3": {"Red": 5, "Shroom": 32.5, "Triple Shroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
+        "4": {"Triple Shroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5}
     },
     "5": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 12.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "3": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "4": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "5": {"Mushroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5}
+        "3": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "4": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "5": {"Triple Shroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5}
     },
     "6": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 12.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "3": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "4": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "5": {"Mushroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
-        "6": {"Mushroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5}
+        "3": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "4": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "5": {"Triple Shroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
+        "6": {"Triple Shroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5}
     },
     "7": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 12.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "3": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "4": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "5": {"Mushroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
-        "6": {"Mushroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
-        "7": {"Mushroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
+        "3": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "4": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "5": {"Triple Shroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
+        "6": {"Triple Shroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
+        "7": {"Triple Shroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
     },
     "8": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 17.5, "Red": 25, "Banana": 20, "FIB": 7.5, "Shroom": 12.5, "Triple Green": 5, "Triple Nana": 12.5},
-        "3": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Mushroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
-        "4": {"Red": 5, "Shroom": 32.5, "Mushroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
-        "5": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "6": {"Mushroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
-        "7": {"Mushroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
-        "8": {"Mushroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
+        "3": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Triple Shroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
+        "4": {"Red": 5, "Shroom": 32.5, "Triple Shroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
+        "5": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "6": {"Triple Shroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
+        "7": {"Triple Shroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
+        "8": {"Triple Shroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
     },
     "9": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 17.5, "Red": 25, "Banana": 20, "FIB": 7.5, "Shroom": 12.5, "Triple Green": 5, "Triple Nana": 12.5},
-        "3": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Mushroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
-        "4": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "5": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "6": {"Mushroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
-        "7": {"Mushroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
-        "8": {"Mushroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
-        "9": {"Mushroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
+        "3": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Triple Shroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
+        "4": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "5": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "6": {"Triple Shroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
+        "7": {"Triple Shroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
+        "8": {"Triple Shroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
+        "9": {"Triple Shroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
     },
     "10": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 17.5, "Red": 25, "Banana": 20, "FIB": 7.5, "Shroom": 12.5, "Triple Green": 5, "Triple Nana": 12.5},
         "3": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 12.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "4": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "5": {"Red": 5, "Shroom": 32.5, "Mushroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
-        "6": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "7": {"Mushroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
-        "8": {"Mushroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
-        "9": {"Mushroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
-        "10": {"Mushroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
+        "4": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "5": {"Red": 5, "Shroom": 32.5, "Triple Shroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
+        "6": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "7": {"Triple Shroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
+        "8": {"Triple Shroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
+        "9": {"Triple Shroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
+        "10": {"Triple Shroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
     },
     "11": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 17.5, "Red": 25, "Banana": 20, "FIB": 7.5, "Shroom": 12.5, "Triple Green": 5, "Triple Nana": 12.5},
         "3": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 5, "Shroom": 20, "Bomb": 2.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "4": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Mushroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
-        "5": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "6": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "7": {"Mushroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
-        "8": {"Mushroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
-        "9": {"Mushroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
-        "10": {"Mushroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
-        "11": {"Mushroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
+        "4": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Triple Shroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
+        "5": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "6": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "7": {"Triple Shroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
+        "8": {"Triple Shroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
+        "9": {"Triple Shroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
+        "10": {"Triple Shroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
+        "11": {"Triple Shroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
     },
     "12": {
         "1": {"Green": 32.5, "Banana": 37.5, "FIB": 20, "Triple Nana": 10},
         "2": {"Green": 17.5, "Red": 25, "Banana": 20, "FIB": 7.5, "Shroom": 12.5, "Triple Green": 5, "Triple Nana": 12.5},
         "3": {"Green": 15, "Red": 25, "Banana": 7.5, "FIB": 5, "Shroom": 20, "Bomb": 2.5, "Triple Green": 10, "Triple Red": 5, "Triple Nana": 10},
-        "4": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Mushroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
-        "5": {"Red": 10, "Shroom": 35, "Mushroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
-        "6": {"Red": 5, "Shroom": 32.5, "Mushroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
-        "7": {"Shroom": 30, "Mushroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
-        "8": {"Mushroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
-        "9": {"Mushroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
-        "10": {"Mushroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
-        "11": {"Mushroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
-        "12": {"Mushroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
+        "4": {"Green": 7.5, "Red": 20, "Banana": 2.5, "FIB": 2.5, "Shroom": 27.5, "Triple Shroom": 5, "Bomb": 5, "Blue": 7.5, "Mega": 2.5, "Triple Green": 7.5, "Triple Red": 10, "Triple Nana": 2.5},
+        "5": {"Red": 10, "Shroom": 35, "Triple Shroom": 12.5, "Bomb": 5, "Blue": 7.5, "Mega": 7.5, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 5, "Triple Red": 7.5},
+        "6": {"Red": 5, "Shroom": 32.5, "Triple Shroom": 20, "Bomb": 5, "Blue": 7.5, "Golden": 2.5, "Mega": 10, "Blooper": 2.5, "POW": 5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 5},
+        "7": {"Shroom": 30, "Triple Shroom": 30, "Bomb": 5, "Star": 2.5, "Golden": 10, "Mega": 7.5, "POW": 7.5, "Mega TC": 2.5, "Triple Green": 2.5, "Triple Red": 2.5},
+        "8": {"Triple Shroom": 42.5, "Star": 22.5, "Golden": 25, "Mega": 5, "POW": 5},
+        "9": {"Triple Shroom": 37.5, "Star": 30, "Golden": 27.5, "POW": 2.5, "Bill": 2.5},
+        "10": {"Triple Shroom": 30, "Star": 27.5, "Golden": 35, "Bill": 7.5},
+        "11": {"Triple Shroom": 12.5, "Shock": 7.5, "Star": 27.5, "Golden": 30, "Bill": 22.5},
+        "12": {"Triple Shroom": 2.5, "Shock": 20, "Star": 20, "Golden": 22.5, "Bill": 35}
     }
 };
 
@@ -269,3 +269,4 @@ renderTable();
 </script>
 </body>
 </html>
+
