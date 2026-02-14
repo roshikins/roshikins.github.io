@@ -161,12 +161,12 @@
                 }
             };
 
-            const handleCopyARCode = () => {
-                const arCode = `040017B0 CB48BCB4
-040017B4 C1F55299
-040017B8 CDB83752
-040017BC 45930F48
-040017C0 CD46AE45`;
+            const handleCopyAR = () => {
+                const ar = `040017B0 CAA90C60
+040017B4 E6D32D33
+040017B8 674913F7
+040017BC 218F507F
+040017C0 3D4799B5`;
                 navigator.clipboard.writeText(arCode).then(() => {
                     setStatus('Code copied to clipboard');
                 });
@@ -269,7 +269,7 @@
                         </div>
 
                         <p className="text-slate-700 text-sm mt-4 text-center">
-                            Latest RR version: 6.8.2
+                            Latest RR version: 6.8.3
                         </p>
                     </div>
                 </div>
