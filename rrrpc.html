@@ -167,7 +167,7 @@
 040017B8 674913F7
 040017BC 218F507F
 040017C0 3D4799B5`;
-                navigator.clipboard.writeText(arCode).then(() => {
+                navigator.clipboard.writeText(ar).then(() => {
                     setStatus('Code copied to clipboard');
                 });
             };
@@ -237,7 +237,7 @@
                             </button>
 
                             <button
-                                onClick={handleCopyARCode}
+                                onClick={handleCopyAR}
                                 className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
                             >
                                 Copy Code
