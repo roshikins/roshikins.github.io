@@ -168,7 +168,7 @@
 040017BC D573D84A
 040017C0 78DD0242`;
                 navigator.clipboard.writeText(ar).then(() => {
-                    setStatus('Code copied to clipboard');
+                    setStatus('Patch copied to clipboard');
                 });
             };
 
@@ -240,7 +240,7 @@
                                 onClick={handleCopyAR}
                                 className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded transition-colors flex items-center justify-center gap-2"
                             >
-                                Copy Code
+                                Copy Patch
                             </button>
 
                             {status && (
@@ -262,7 +262,7 @@
                                         <li>navigate to "Rich Presence" in the side bar then add the image. <strong>make sure it's named image_logo after you add it!</strong></li>
                                         <li>copy the application ID in general settings then use that in the patcher</li>
                                         <li>replace your old code.pul with the patched one</li>
-                                        <li>run rr with the code enabled. if you don't know how, don't bother with this</li>
+                                        <li>run rr with the patch enabled. if you don't know how, don't bother with this</li>
                                     </ol>
                                 </div>
                             )}
