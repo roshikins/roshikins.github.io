@@ -47,7 +47,7 @@
             const [dragActive, setDragActive] = useState(false);
             const [showHelp, setShowHelp] = useState(false);
 
-            const TARGET_HEX = '31 33 34 31 32 34 33 30 30 35 31 37 36 33 38 35 35 37 38';
+            const TARGET_HEX = '31 34 37 31 33 31 36 39 35 30 30 30 34 30 30 36 39 36 33';
 
             const handleDrag = (e) => {
                 e.preventDefault();
@@ -162,11 +162,11 @@
             };
 
             const handleCopyAR = () => {
-                const ar = `040017B0 CAA90C60
-040017B4 E6D32D33
-040017B8 674913F7
-040017BC 218F507F
-040017C0 3D4799B5`;
+                const ar = `040017B0 3C7A653A
+040017B4 8435A8F6
+040017B8 16168D63
+040017BC D573D84A
+040017C0 78DD0242`;
                 navigator.clipboard.writeText(ar).then(() => {
                     setStatus('Code copied to clipboard');
                 });
